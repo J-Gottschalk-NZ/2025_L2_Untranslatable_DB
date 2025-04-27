@@ -1,0 +1,22 @@
+.add-entry-form {
+    text-align: center;
+}
+
+.add-form {
+    max-width: 700px;
+    display: inline-block;
+    text-align: left;
+}
+
+.add-widget {
+    width: 650px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.add-submit{
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+

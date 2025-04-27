@@ -1,0 +1,135 @@
+/* html, body styling ensures page fills viewport */
+
+html, body{
+/* margin: auto; */
+padding: 0;
+height: 100%;   /* makes footer stick to bottom */
+margin: 0;
+background-color: white;
+font-family: "Bitter", serif;
+}
+
+/* grid set up */
+.wrapper {
+
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 200px auto 350px;
+
+    /* Make main div fill available screen space */
+    grid-template-rows: auto auto 1fr auto; 
+    grid-template-areas: 
+        "logo banner banner"
+        "navigation navigation quick-search"
+        "main main main"
+        "footer footer footer";
+    row-gap: 4px;
+    
+}
+
+
+.logo {
+    grid-area: logo;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.quick-search {
+    grid-area: quick-search;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.main {
+    grid-area: main;
+    background-color: #E1E1E1;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #adc6ff;
+    display: flex;
+	justify-content: space-between;
+}
+
+.all {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo, .banner, .footer {
+    background-color: #191919;
+    color: #E1E1E1;
+    /* padding: 20px; */
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+/* image on home page (right, rotated) */
+.right {
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    transform: rotate(10deg);
+
+}
+
+.label-text {
+display: none;
+}
+
+.label-text:hover {
+    display: inline-block;
+}
+
+/* Links in pages */
+a {
+    color: #4d771E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* a:visited {color: #444444;} */
+a:hover {color: #2D5C91;}
+
+
+/* footer link */
+.footer a, .footer a:visited {
+	text-decoration: none;
+    color: #A8C18B
+    ;
+}
+
+.footer a:hover{
+    color: #8cbdf4;
+}
+
+.error {
+    margin-left: 50px;
+    /* max-width: 650px; */
+    background-color: #ffa5a5;
+    border-radius: 10px;
+
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+}

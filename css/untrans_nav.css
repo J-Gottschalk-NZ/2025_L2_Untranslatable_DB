@@ -1,0 +1,85 @@
+.nav-button {
+	background-color: #191919;
+	color: #E1E1E1;
+	font-weight: bold;
+	font-family: "Raleway", sans-serif;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.nav-button:hover {
+	color: #85CB33;
+}
+
+/* separating elements with spaces means we can target the 'a' that is INSIDE our 'navigatin' div. */
+.navigation a {
+	text-decoration: none;
+}
+
+/* By default, show label */
+.label {
+	display: inline;
+	transition: opacity 0.3s, margin-left 0.3s;
+}
+
+
+/* Hide label on smaller screens */
+@media (max-width: 1000px) {
+	.label {
+		opacity: 0;
+		margin-left: 0;
+		width: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		display: inline-block;
+		transition: opacity 0.3s, width 0.3s, margin-left 0.3s;
+	}
+
+}
+
+/* CSS for side panel from W3C (edited)! */
+
+/* The sidepanel menu */
+.sidepanel {
+	width: 0;           /* hidden @start, expanded with JS */
+	position: fixed;    /* Stay in place */
+	z-index: 1;         /* Stay on top */
+	top: 150px;         /* shift down (under nav bar) */
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding: 0;
+	transition: 0.4s;   /* 0.4 second slide transition*/
+}
+
+/* Add padding to side panel */
+.sidePanelWrapper {
+	padding: 10px;
+	background-color: #191919;
+	color: #fff;
+}
+
+/* Put heading and close cross next to each other */
+.sidepanel-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Cross Styling */
+.sidepanel a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: #E1E1E1;
+	transition: 0.3s;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+	color: #ffaeae;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+	top: 0;
+	font-size: 36px;
+}

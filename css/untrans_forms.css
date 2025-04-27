@@ -1,0 +1,80 @@
+form {
+    width: 100%;
+}
+
+.search {
+    background:#fff;
+    width: 200px;
+}
+
+.advanced {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 275px;
+}
+
+.advanced-button {
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+.advanced-search {
+    background-color: #A8C18B;
+}
+
+.advanced-search:hover{
+    background-color: #4d771E;
+    color: #fff;
+}
+
+.add-entry {
+    background-color: #8cbdf4
+    ;
+}
+
+.add-entry:hover{
+    background-color: #2D5C91;
+    color: #fff;
+}
+
+input, textarea, select {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;    /* adds gap underneath widget */
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+
+.quicksearch {
+    border-radius: 5px 0 0 5px; 
+    display: inline-block;
+}
+
+.submit::-moz-focus-inner { 
+    border: 0;
+}
+
+
+.submit {
+    position:relative;
+    width: 45px;
+    font-size: 14px;
+    
+    left:-5px;
+    background-color: #636263; 
+    color:#d6d3d7;
+    border: 1px solid #000;
+    border-radius: 0 5px 5px 0;   
+    display: inline-block;
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color: #000;
+}
